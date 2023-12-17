@@ -8,12 +8,11 @@ export const metadata: Metadata = {
     card: "summary_large_image",
   },
   openGraph: {
-    url: "https://next-enterprise.vercel.app/",
     images: [
       {
         width: 1200,
         height: 630,
-        url: "images/phdoge-logo.png",
+        url: "https://i.imgur.com/Vl0CFM2.png",
       },
     ],
   },
