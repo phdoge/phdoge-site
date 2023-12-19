@@ -1,7 +1,7 @@
 export const LP_GRID_ITEMS = [
   {
     title: "Community",
-    description: "We are nothing without our frens.",
+    description: "A wise dog once proclaimed: We are nothing without our frens.",
     icon: (
       <img
       src="images/community.png"
@@ -13,7 +13,7 @@ export const LP_GRID_ITEMS = [
     ),
   },
   {
-    title: "Science",
+    title: "Wisdom",
     description: "Proceeds will go to fund research on privacy.",
     icon: (
       <img
@@ -26,7 +26,7 @@ export const LP_GRID_ITEMS = [
     ),
   },
   {
-    title: "Finance",
+    title: "Wealth",
     description: "Money is power",
     icon: (
           <img

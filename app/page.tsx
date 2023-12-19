@@ -2,6 +2,7 @@ import { Metadata } from "next"
 import { Button } from "components/Button/Button"
 import { LP_GRID_ITEMS } from "lp-items"
 
+
 export const metadata: Metadata = {
   title: "PhDoge: The Philosophy Dogster",
   twitter: {
@@ -17,6 +18,21 @@ export const metadata: Metadata = {
     ],
   },
 }
+
+// Example data structure for your list items
+const textBoxes = [
+  {
+    imgSrc: "path_to_image1.png",
+    header: "Header 1",
+    subtext: "This is subtext 1."
+  },
+  {
+    imgSrc: "path_to_image2.png",
+    header: "Header 2",
+    subtext: "This is subtext 2."
+  },
+  // Add more items as needed
+];
 
 export default function Web() {
   return (
@@ -67,6 +83,27 @@ export default function Web() {
     </div>
   </div>
 </section>
+
+      {/* New section for text boxes */}
+
+      <section className="bg-white dark:bg-gray-900">
+        <div className="mx-auto max-w-screen-xl px-4 py-8 lg:py-16">
+        <h2 className="text-3xl font-bold mb-8 dark:text-white">How to Buy</h2>
+          {textBoxes.map((item, index) => (
+            <div key={index} className="flex items-center justify-start mb-6">
+              <img
+                src={item.imgSrc}
+                alt="Image"
+                className="mr-4 w-20 h-20" // Adjust size as needed
+              />
+              <div>
+                <h3 className="text-xl font-bold dark:text-white">{item.header}</h3>
+                <p className="text-gray-500 dark:text-gray-400">{item.subtext}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
 
     </>
   )
